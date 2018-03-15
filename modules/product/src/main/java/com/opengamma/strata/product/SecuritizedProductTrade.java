@@ -53,6 +53,16 @@ public interface SecuritizedProductTrade
    */
   public abstract double getPrice();
 
+  /**
+   * Returns an instance with the specified quantity.
+   * <p>
+   * The result consists of the same securitized product and price, but with the quantity altered.
+   * 
+   * @param quantity  the new quantity
+   * @return the instance based on the same securitized product and price with the specified quantity
+   */
+  public abstract SecuritizedProductTrade withQuantity(double quantity);
+
   //-------------------------------------------------------------------------
   /**
    * Gets the security identifier.
