@@ -9,7 +9,8 @@ package com.opengamma.strata.product;
  * A trade that is based on security, quantity and price.
  * <p>
  * If the trade is directly based on a securitized product, the trade type is {@link SecuritizedProductTrade}.
- * If not, the financial instrument involved in this trade is represented in alternative form, e.g., {@link Security}.
+ * If not, the financial instrument involved in the trade is represented in alternative form, e.g., {@link Security}.
+ * See individual implementations for more details.
  */
 public interface SecurityQuantityTrade
     extends Trade, SecurityQuantity {
